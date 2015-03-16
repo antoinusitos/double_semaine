@@ -150,7 +150,9 @@ public class gamecamera : MonoBehaviour {
             if (Input.GetMouseButtonDown(0))
             {
                 panOrigin = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-                UIclick = UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject();
+
+                int pointerID = Input.GetTouch(0).fingerId;
+                UIclick = UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject(pointerID);
             }
 
             if (Input.GetMouseButton(0))
