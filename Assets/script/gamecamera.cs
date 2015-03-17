@@ -133,6 +133,7 @@ public class gamecamera : MonoBehaviour {
                     //destination.transform.GetChild(0).GetComponent<showUICuisine>().Hide();
                     destination.transform.GetChild(1).GetComponent<Animator>().SetBool("click", true);
                     GameObject plat = (GameObject)Instantiate(destination.GetComponent<cuisine>().GetPlat(), transform.position, Quaternion.identity);
+                    player.GetComponent<player>().FaireManger();
                     StartCoroutine(Preparation(4, plat.transform, destination));
                     destination = null;
                 }
@@ -283,6 +284,7 @@ public class gamecamera : MonoBehaviour {
             objet = theObject.gameObject;
             preparing = false;
             from.transform.GetChild(1).GetComponent<Animator>().SetBool("click", false);
+            player.GetComponent<Animator>().SetTrigger("end_anim");
         }
         else
         {

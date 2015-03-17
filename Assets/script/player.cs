@@ -106,7 +106,7 @@ public class player : MonoBehaviour {
     public IEnumerator coolDownAnim(float amount)
     {
         yield return new WaitForSeconds(amount + 1);
-        GetComponent<Animator>().SetTrigger("anim_end");
+        GetComponent<Animator>().SetTrigger("end_anim");
         Camera.main.GetComponent<menu>().GetScroll().transform.GetChild(0).gameObject.SetActive(true);
     }
 
