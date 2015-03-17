@@ -155,6 +155,14 @@ public class personnage : MonoBehaviour {
 
 	void Start () {
 
+
+        particule_mort.GetComponent<ParticleSystem>().enableEmission = false;
+        particule_puant.GetComponent<ParticleSystem>().enableEmission = false;
+        particule_puant.transform.GetChild(0).transform.GetComponent<ParticleSystem>().enableEmission = false;
+        particule_propre.GetComponent<ParticleSystem>().enableEmission = false;
+        particule_propre.transform.GetChild(0).transform.GetComponent<ParticleSystem>().enableEmission = false;
+        particule_dodo.GetComponent<ParticleSystem>().enableEmission = false;
+
         Alive = true;
 
         //ETATS
@@ -347,7 +355,7 @@ public class personnage : MonoBehaviour {
             vie = 0;
             Alive = false;
             Camera.main.GetComponent<menu>().Monte();
-            //MORT
+            particule_mort.GetComponent<ParticleSystem>().enableEmission = false;
         }
     }
 
@@ -568,7 +576,6 @@ public class personnage : MonoBehaviour {
         StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("play");
         StartCoroutine(coolDownAnim(play.length));
-        Debug.Log("longueur play:" + play.length);
         social += jouer;
         if (social >= 100)
             social = 100;
@@ -631,6 +638,8 @@ public class personnage : MonoBehaviour {
         {
             if (!sale)
             {
+                particule_puant.GetComponent<ParticleSystem>().enableEmission = true;
+                particule_puant.transform.GetChild(0).transform.GetComponent<ParticleSystem>().enableEmission = true;
                 emotion.gameObject.SetActive(true);
                 bulle.gameObject.SetActive(true);
                 emotion.GetComponent<Image>().sprite = sprite_sale;
@@ -643,13 +652,18 @@ public class personnage : MonoBehaviour {
         {
             if (!propre)
             {
-                //feedback
+                particule_propre.GetComponent<ParticleSystem>().enableEmission = true;
+                particule_propre.transform.GetChild(0).transform.GetComponent<ParticleSystem>().enableEmission = true;
             }
             sale = false;
             propre = true;
         }
         else
         {
+            particule_propre.GetComponent<ParticleSystem>().enableEmission = false;
+            particule_propre.transform.GetChild(0).transform.GetComponent<ParticleSystem>().enableEmission = false;
+            particule_puant.GetComponent<ParticleSystem>().enableEmission = false;
+            particule_puant.transform.GetChild(0).transform.GetComponent<ParticleSystem>().enableEmission = false;
             sale = false;
             propre = false;
         }
@@ -675,6 +689,7 @@ public class personnage : MonoBehaviour {
 
             if (sommeil <= 0)
             {
+                particule_dodo.GetComponent<ParticleSystem>().enableEmission = true;
                 GetComponent<Animator>().SetTrigger("liedown");
                 endormi = true;
             }
@@ -695,6 +710,7 @@ public class personnage : MonoBehaviour {
             }
             else
             {
+                particule_dodo.GetComponent<ParticleSystem>().enableEmission = false;
                 GetComponent<Animator>().SetTrigger("wakeup");
                 coolDownAnim(liedown.length); ;
                 fatigue = false;
