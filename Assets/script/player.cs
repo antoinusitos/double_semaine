@@ -103,6 +103,8 @@ public class player : MonoBehaviour {
 
     }
 
+
+
     public IEnumerator coolDownAnim(float amount)
     {
         yield return new WaitForSeconds(amount + 1);

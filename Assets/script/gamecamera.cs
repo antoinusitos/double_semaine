@@ -229,7 +229,7 @@ public class gamecamera : MonoBehaviour {
                                 //aller voir le personnage
                                 else if (hit.transform.tag == "personnage")
                                 {
-                                    player.GetComponent<NavMeshAgent>().SetDestination(personnage.transform.position);
+                                    player.GetComponent<NavMeshAgent>().SetDestination(personnage.transform.GetChild(0).transform.position);
                                     if (equipe)
                                         player.GetComponent<Animator>().SetTrigger("walkwith");
                                     else
@@ -249,7 +249,7 @@ public class gamecamera : MonoBehaviour {
                                 //aller à la cuisine
                                 else if (hit.transform.tag == "cuisine")
                                 {
-                                    player.GetComponent<NavMeshAgent>().SetDestination(hit.transform.position);
+                                    player.GetComponent<NavMeshAgent>().SetDestination(hit.transform.GetChild(0).transform.position);
                                     if (equipe)
                                         player.GetComponent<Animator>().SetTrigger("walkwith");
                                     else
@@ -259,7 +259,7 @@ public class gamecamera : MonoBehaviour {
                                 //aller au jardin
                                 else if (hit.transform.tag == "jardin")
                                 {
-                                    player.GetComponent<NavMeshAgent>().SetDestination(hit.transform.position);
+                                    player.GetComponent<NavMeshAgent>().SetDestination(hit.transform.GetChild(0).transform.position);
                                     if (equipe)
                                         player.GetComponent<Animator>().SetTrigger("walkwith");
                                     else
@@ -296,7 +296,9 @@ public class gamecamera : MonoBehaviour {
             from.transform.GetChild(0).GetComponent<showUICuisine>().Hide();
             from.GetComponent<cuisine>().Resetvalue();
             theObject.parent = player.transform;
-            theObject.transform.position = new Vector3(player.transform.position.x + 1, 1, player.transform.position.z);
+            theObject.rotation = Quaternion.Euler(new Vector3(270, 0, 0));
+            theObject.position = new Vector3(0, .6f, .2f);
+            //theObject.transform.position = new Vector3(player.transform.position.x + 1, 1, player.transform.position.z);
             equipe = true;
             objetid = theObject.GetComponent<objet>().GetId();
             objet = theObject.gameObject;

@@ -21,6 +21,7 @@ public class triggerPersonnage : MonoBehaviour {
         {
             if (!perso.GetEndormi())
             {
+                other.transform.rotation = Quaternion.Euler(transform.parent.transform.position);
                 if (Camera.main.GetComponent<gamecamera>().GetEquipe() && !perso.GetRepu())
                 {
                     perso.FaireManger();
