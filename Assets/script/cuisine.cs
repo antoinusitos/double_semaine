@@ -18,4 +18,9 @@ public class cuisine : MonoBehaviour {
         slider.GetComponent<Slider>().value += 0.25f;
     }
 
+    public void Resetvalue()
+    {
+        slider.GetComponent<Slider>().value = 0;
+    }
+
 }

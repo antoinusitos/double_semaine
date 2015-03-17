@@ -250,7 +250,8 @@ public class gamecamera : MonoBehaviour {
                 yield return new WaitForSeconds(amount / 4);
                 from.GetComponent<cuisine>().Addvalue();
             }
-            destination.transform.GetChild(0).GetComponent<showUICuisine>().Hide();
+            from.transform.GetChild(0).GetComponent<showUICuisine>().Hide();
+            from.GetComponent<cuisine>().Resetvalue();
             theObject.parent = player.transform;
             theObject.transform.position = new Vector3(player.transform.position.x + 1, 1, player.transform.position.z);
             equipe = true;
