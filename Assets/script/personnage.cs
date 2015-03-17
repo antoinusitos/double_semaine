@@ -322,6 +322,7 @@ public class personnage : MonoBehaviour {
         {
             vie = 0;
             Alive = false;
+            Camera.main.GetComponent<menu>().Monte();
             //MORT
         }
     }
