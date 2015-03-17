@@ -119,7 +119,7 @@ public class gamecamera : MonoBehaviour {
                 else if (destination.tag == "cuisine" && !equipe)
                 {
                     preparing = true;
-                    destination.transform.GetChild(0).GetComponent<showUICuisine>().Hide();
+                    //destination.transform.GetChild(0).GetComponent<showUICuisine>().Hide();
                     destination.transform.GetChild(1).GetComponent<Animator>().SetBool("click", true);
                     GameObject plat = (GameObject)Instantiate(destination.GetComponent<cuisine>().GetPlat(), transform.position, Quaternion.identity);
                     StartCoroutine(Preparation(4, plat.transform, destination));
@@ -243,7 +243,26 @@ public class gamecamera : MonoBehaviour {
     public IEnumerator Preparation(float amount, Transform theObject, GameObject from)
     {
         player.GetComponent<NavMeshAgent>().SetDestination(player.transform.position);
-        yield return new WaitForSeconds(amount);
+        if (from.tag == "cuisine")
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                yield return new WaitForSeconds(amount / 4);
+                from.GetComponent<cuisine>().Addvalue();
+            }
+            destination.transform.GetChild(0).GetComponent<showUICuisine>().Hide();
+            theObject.parent = player.transform;
+            theObject.transform.position = new Vector3(player.transform.position.x + 1, 1, player.transform.position.z);
+            equipe = true;
+            objetid = theObject.GetComponent<objet>().GetId();
+            objet = theObject.gameObject;
+            preparing = false;
+            from.transform.GetChild(1).GetComponent<Animator>().SetBool("click", false);
+        }
+        else
+        {
+            yield return new WaitForSeconds(amount);
+        }
         Debug.Log(theObject.name);
         theObject.parent = player.transform;
         theObject.transform.position = new Vector3(player.transform.position.x+1, 1, player.transform.position.z);
