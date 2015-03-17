@@ -296,7 +296,7 @@ public class gamecamera : MonoBehaviour {
             from.transform.GetChild(0).GetComponent<showUICuisine>().Hide();
             from.GetComponent<cuisine>().Resetvalue();
             theObject.parent = player.transform;
-            theObject.rotation = Quaternion.Euler(new Vector3(270, 0, 0));
+            theObject.rotation = Quaternion.Euler(new Vector3(0,260,0));
             theObject.position = new Vector3(0, .6f, .2f);
             //theObject.transform.position = new Vector3(player.transform.position.x + 1, 1, player.transform.position.z);
             equipe = true;
