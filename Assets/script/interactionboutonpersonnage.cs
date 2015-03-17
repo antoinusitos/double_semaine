@@ -10,12 +10,14 @@ public class interactionboutonpersonnage : MonoBehaviour {
     public bool nettoyer;
 
     public GameObject personnage;
+    public GameObject player;
 
     public void OnClick()
     {
         if(jouer)
         {
             personnage.GetComponent<personnage>().Jouer();
+            
         }
         else if (parler)
         {

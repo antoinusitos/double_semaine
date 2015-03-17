@@ -665,6 +665,7 @@ public class personnage : MonoBehaviour {
 
             if (sommeil <= 0)
             {
+                GetComponent<Animator>().SetTrigger("liedown");
                 endormi = true;
             }
         }
@@ -676,7 +677,7 @@ public class personnage : MonoBehaviour {
                 //s'il ne dormait pas avant
                 if (!endormi)
                 {
-                    GetComponent<Animator>().SetTrigger("liedown");
+                   // GetComponent<Animator>().SetTrigger("liedown");
                     //coolDownAnim(warm.length);
                 }
                 endormi = true;
@@ -684,7 +685,8 @@ public class personnage : MonoBehaviour {
             }
             else
             {
-                GetComponent<Animator>().SetTrigger("anim_end");
+                GetComponent<Animator>().SetTrigger("wakeup");
+                coolDownAnim(liedown.length); ;
                 fatigue = false;
                 endormi = false;
             }
