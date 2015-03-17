@@ -10,8 +10,11 @@ public class Pot : MonoBehaviour {
 
     private float tempPousse;
     private float tempFini;
+    private float tempIntermediaire;
 
+    private GameObject[] plantes;
 
+    public GameObject DecorPlante;
 
     void Start()
     {
@@ -19,6 +22,7 @@ public class Pot : MonoBehaviour {
         type = -1;
         tempPousse = 0;
         tempFini = 300;
+        tempIntermediaire = 150;
     }
 
     void Update()
@@ -26,18 +30,30 @@ public class Pot : MonoBehaviour {
         if(plein && !fini)
         {
             tempPousse++;
-            if (tempPousse > tempFini)
+            if (tempPousse >= tempFini)
             {
                 fini = true;
                 //mettre anim fini
-                transform.GetComponent<MeshRenderer>().material.color = Color.black;
+                Destroy(transform.GetChild(1).gameObject);
+                GameObject plante = (GameObject)Instantiate(plantes[1], transform.GetChild(1).position, Quaternion.identity);
+                plante.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+                plante.transform.parent = transform;
+            }
+            else if (tempPousse >= tempIntermediaire)
+            {
+                Destroy(transform.GetChild(1).gameObject);
+
+                GameObject plante = (GameObject)Instantiate(plantes[0], transform.GetChild(0).position, Quaternion.identity);
+                plante.transform.rotation = Quaternion.Euler(new Vector3(270, 0, 0));
+                plante.transform.parent = transform;
             }
         }
     }
 
-    public void Remplir(int theType)
+    public void Remplir(int theType, GameObject[] go)
     {
         //mettre anim petit
+        plantes = go;
         type = theType;
         plein = true;
         if(theType == 0)
@@ -54,13 +70,26 @@ public class Pot : MonoBehaviour {
         if (type == 0)
         {
             player.medoc++;
+            Destroy(transform.GetChild(1).gameObject);
         }
         else if (type == 1)
+        {
             //rajouter un objet dans le décor
-            transform.GetComponent<MeshRenderer>().material.color = Color.white;
+            Destroy(transform.GetChild(1).gameObject);
+            int number = 0;
+            Transform deco = DecorPlante.transform.GetChild(number);
+            while(deco.gameObject.activeSelf == true && number < 5)
+            {
+                number++;
+                deco = DecorPlante.transform.GetChild(number);
+            }
+            deco.gameObject.SetActive(true);
+        }
         else if (type == 2)
+        {
             //changer le son
-            transform.GetComponent<MeshRenderer>().material.color = Color.white;
+            Destroy(transform.GetChild(1).gameObject);
+        }
         Reset();
     }
 

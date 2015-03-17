@@ -20,6 +20,7 @@ public class personnage : MonoBehaviour {
     public Sprite sprite_ennuye;
 
     public GameObject emotion;
+    public GameObject bulle;
 
     //FIN SPRITES
 
@@ -552,7 +553,8 @@ public class personnage : MonoBehaviour {
         {
             if (!endolori)
             {
-                emotion.transform.parent.gameObject.SetActive(true);
+                emotion.gameObject.SetActive(true);
+                bulle.gameObject.SetActive(true);
                 emotion.GetComponent<Image>().sprite = sprite_endolori;
                 StartCoroutine("Bulle", temps_emoticone);
             }
@@ -568,7 +570,8 @@ public class personnage : MonoBehaviour {
         {
             if (!froid)
             {
-                emotion.transform.parent.gameObject.SetActive(true);
+                emotion.gameObject.SetActive(true);
+                bulle.gameObject.SetActive(true);
                 emotion.GetComponent<Image>().sprite = sprite_froid;
                 StartCoroutine("Bulle", temps_emoticone);
             }
@@ -584,7 +587,8 @@ public class personnage : MonoBehaviour {
         {
             if (!sale)
             {
-                emotion.transform.parent.gameObject.SetActive(true);
+                emotion.gameObject.SetActive(true);
+                bulle.gameObject.SetActive(true);
                 emotion.GetComponent<Image>().sprite = sprite_sale;
                 StartCoroutine("Bulle", temps_emoticone);
             }
@@ -613,7 +617,8 @@ public class personnage : MonoBehaviour {
             {
                 if (!fatigue)
                 {
-                    emotion.transform.parent.gameObject.SetActive(true);
+                    emotion.gameObject.SetActive(true);
+                    bulle.gameObject.SetActive(true);
                     emotion.GetComponent<Image>().sprite = sprite_fatigue;
                     StartCoroutine("Bulle", temps_emoticone);
                 }
@@ -655,7 +660,8 @@ public class personnage : MonoBehaviour {
         {
             if (!repus)
             {
-                emotion.transform.parent.gameObject.SetActive(true);
+                emotion.gameObject.SetActive(true);
+                bulle.gameObject.SetActive(true);
                 emotion.GetComponent<Image>().sprite = sprite_repu;
                 StartCoroutine("Bulle", temps_emoticone);
             }
@@ -666,7 +672,8 @@ public class personnage : MonoBehaviour {
         {
             if (!affame)
             {
-                emotion.transform.parent.gameObject.SetActive(true);
+                emotion.gameObject.SetActive(true);
+                bulle.gameObject.SetActive(true);
                 emotion.GetComponent<Image>().sprite = sprite_affame;
                 StartCoroutine("Bulle", temps_emoticone);
             }
@@ -684,7 +691,8 @@ public class personnage : MonoBehaviour {
         {
             if (!content)
             {
-                emotion.transform.parent.gameObject.SetActive(true);
+                emotion.gameObject.SetActive(true);
+                bulle.gameObject.SetActive(true);
                 emotion.GetComponent<Image>().sprite = sprite_content;
                 StartCoroutine("Bulle", temps_emoticone);
             }
@@ -695,7 +703,8 @@ public class personnage : MonoBehaviour {
         {
             if (!triste)
             {
-                emotion.transform.parent.gameObject.SetActive(true);
+                emotion.gameObject.SetActive(true);
+                bulle.gameObject.SetActive(true);
                 emotion.GetComponent<Image>().sprite = sprite_triste;
                 StartCoroutine("Bulle", temps_emoticone);
             }
@@ -713,7 +722,8 @@ public class personnage : MonoBehaviour {
         {
             if (!ennuye)
             {
-                emotion.transform.parent.gameObject.SetActive(true);
+                emotion.gameObject.SetActive(true);
+                bulle.gameObject.SetActive(true);
                 emotion.GetComponent<Image>().sprite = sprite_ennuye;
                 StartCoroutine("Bulle", temps_emoticone);
             }
@@ -729,7 +739,8 @@ public class personnage : MonoBehaviour {
         {
             if (!stresse)
             {
-                emotion.transform.parent.gameObject.SetActive(true);
+                emotion.gameObject.SetActive(true);
+                bulle.gameObject.SetActive(true);
                 emotion.GetComponent<Image>().sprite = sprite_stresse;
                 StartCoroutine("Bulle", temps_emoticone);
             }
@@ -744,6 +755,7 @@ public class personnage : MonoBehaviour {
     public IEnumerator Bulle(float amount)
     {
         yield return new WaitForSeconds(amount);
-        emotion.transform.parent.gameObject.SetActive(false);
+        emotion.gameObject.SetActive(false);
+        bulle.gameObject.SetActive(false);
     }
 }

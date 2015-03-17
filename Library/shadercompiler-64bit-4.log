@@ -1,68 +1,6 @@
 Base path: C:/Program Files/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-4-1864
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-4-6000
 Cmd: getPlatforms
-Cmd: compileSnippet
-  api=9 type=0 insize=982 outsize=9610 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=938 outsize=6793 kw=DIRECTIONAL_COOKIE SHADOWS_OFF _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=938 outsize=7485 kw=DIRECTIONAL_COOKIE SHADOWS_SCREEN SHADOWS_NATIVE _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=938 outsize=8618 kw=SPOT SHADOWS_DEPTH SHADOWS_NATIVE _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=938 outsize=7 kw=POINT SHADOWS_OFF _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=938 outsize=7 kw=POINT_COOKIE SHADOWS_CUBE SHADOWS_SOFT _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=938 outsize=7 kw=POINT_COOKIE SHADOWS_CUBE _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=938 outsize=7 kw=DIRECTIONAL_COOKIE SHADOWS_SCREEN SHADOWS_NATIVE _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=751 outsize=7 kw=SHADOWS_CUBE _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=1152 outsize=8816 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF UNITY_HDR_ON _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=1152 outsize=7 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF UNITY_HDR_ON _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=886 outsize=8907 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=886 outsize=8931 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=886 outsize=9669 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=1 insize=886 outsize=6 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=816 outsize=6909 kw=POINT SHADOWS_OFF _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=816 outsize=6675 kw=DIRECTIONAL_COOKIE SHADOWS_OFF _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=816 outsize=7737 kw=POINT SHADOWS_CUBE _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=816 outsize=7721 kw=SPOT SHADOWS_OFF _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=816 outsize=7607 kw=DIRECTIONAL SHADOWS_SCREEN _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=816 outsize=7631 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=816 outsize=7 kw=POINT_COOKIE SHADOWS_OFF _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=816 outsize=7 kw=SPOT SHADOWS_DEPTH SHADOWS_NATIVE _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=816 outsize=7 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=1 insize=816 outsize=6 kw=POINT_COOKIE SHADOWS_OFF _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=816 outsize=7 kw=POINT_COOKIE SHADOWS_OFF _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=816 outsize=7 kw=SPOT SHADOWS_DEPTH SHADOWS_NATIVE _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=816 outsize=7 kw=POINT_COOKIE SHADOWS_CUBE _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=1 insize=816 outsize=6 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=600 outsize=2560 kw=SHADOWS_DEPTH _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=1 insize=600 outsize=6 kw=SHADOWS_CUBE _ALPHATEST_ON ok=1
 Unhandled exception: Readfile from pipe failed. GLE=Le canal de communication a été fermé.
 
 

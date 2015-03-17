@@ -119,9 +119,8 @@ public class gamecamera : MonoBehaviour {
                 else if (destination.tag == "cuisine" && !equipe)
                 {
                     preparing = true;
-                    destination.transform.GetChild(0).GetComponent<ShowUI>().Hide();
+                    destination.transform.GetChild(0).GetComponent<showUICuisine>().Hide();
                     destination.transform.GetChild(1).GetComponent<Animator>().SetBool("click", true);
-                    //destination.transform.GetChild(1).GetComponent<Animator>().SetBool("end", false);
                     GameObject plat = (GameObject)Instantiate(destination.GetComponent<cuisine>().GetPlat(), transform.position, Quaternion.identity);
                     StartCoroutine(Preparation(4, plat.transform, destination));
                     destination = null;
@@ -151,8 +150,13 @@ public class gamecamera : MonoBehaviour {
             {
                 panOrigin = Camera.main.ScreenToViewportPoint(Input.mousePosition);
 
-                int pointerID = Input.GetTouch(0).fingerId;
-                UIclick = UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject(pointerID);
+                UIclick = UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject();
+
+                //decommenter ici pour la build finale
+
+                /*int pointerID = Input.GetTouch(0).fingerId;
+                if (pointerID != null)
+                    UIclick = UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject(pointerID);*/
             }
 
             if (Input.GetMouseButton(0))
@@ -248,6 +252,5 @@ public class gamecamera : MonoBehaviour {
         objet = theObject.gameObject;
         preparing = false;
         from.transform.GetChild(1).GetComponent<Animator>().SetBool("click", false);
-       // from.transform.GetChild(1).GetComponent<Animator>().SetBool("end", true);
     }
 }

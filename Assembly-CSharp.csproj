@@ -67,6 +67,7 @@
      <Compile Include="Assets\script\poubelle.cs" />
      <Compile Include="Assets\script\poubelleUI.cs" />
      <Compile Include="Assets\script\semerGraine.cs" />
+     <Compile Include="Assets\script\showUICuisine.cs" />
      <Compile Include="Assets\script\soignerBouton.cs" />
      <Compile Include="Assets\script\transparancy.cs" />
      <Compile Include="Assets\script\triggerPersonnage.cs" />

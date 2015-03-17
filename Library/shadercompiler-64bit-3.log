@@ -1,62 +1,6 @@
 Base path: C:/Program Files/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-3-5368
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-3-4452
 Cmd: getPlatforms
-Cmd: compileSnippet
-  api=9 type=0 insize=982 outsize=7443 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=982 outsize=7 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=938 outsize=6270 kw=DIRECTIONAL SHADOWS_OFF _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=938 outsize=9120 kw=POINT SHADOWS_CUBE SHADOWS_SOFT _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=938 outsize=7484 kw=DIRECTIONAL_COOKIE SHADOWS_OFF _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=938 outsize=7761 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=938 outsize=7 kw=SPOT SHADOWS_OFF _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=938 outsize=7 kw=POINT SHADOWS_CUBE SHADOWS_SOFT _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=938 outsize=7 kw=POINT SHADOWS_CUBE _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=938 outsize=7 kw=POINT SHADOWS_CUBE SHADOWS_SOFT _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=751 outsize=1184 kw=SHADOWS_CUBE _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=1152 outsize=6662 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=886 outsize=6772 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=886 outsize=8870 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=886 outsize=11060 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=1 insize=886 outsize=6 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=886 outsize=7 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=816 outsize=7050 kw=POINT_COOKIE SHADOWS_OFF _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=816 outsize=7787 kw=SPOT SHADOWS_DEPTH SHADOWS_NATIVE _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=816 outsize=6930 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=816 outsize=6784 kw=DIRECTIONAL SHADOWS_OFF _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=816 outsize=7293 kw=DIRECTIONAL_COOKIE SHADOWS_OFF _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=816 outsize=8661 kw=POINT_COOKIE SHADOWS_CUBE _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=816 outsize=7 kw=SPOT SHADOWS_OFF _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=1 insize=816 outsize=6 kw=SPOT SHADOWS_DEPTH SHADOWS_NONATIVE _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=1 insize=816 outsize=6 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=816 outsize=7 kw=SPOT SHADOWS_OFF _NORMALMAP _ALPHATEST_ON ok=1
-Cmd: compileSnippet
-  api=5 type=1 insize=816 outsize=6 kw=POINT SHADOWS_CUBE _NORMALMAP _ALPHATEST_ON ok=1
 Unhandled exception: Readfile from pipe failed. GLE=Le canal de communication a été fermé.
 
 
