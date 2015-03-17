@@ -4,6 +4,20 @@ using System.Collections;
 
 public class personnage : MonoBehaviour {
 
+    //ANIMS
+
+    public AnimationClip clean;
+    public AnimationClip warm;
+    public AnimationClip eat;
+    public AnimationClip hug;
+    public AnimationClip play;
+    public AnimationClip talk;
+    public AnimationClip sleep;
+    public AnimationClip liedown;
+
+    //FIN ANIM
+
+
     //SPRITES
 
     public Sprite sprite_endolori;
@@ -501,34 +515,45 @@ public class personnage : MonoBehaviour {
 
     public void Rechauffer()
     {
-            temperature += rechauffe;
+        GetComponent<Animator>().SetTrigger("warm");
+        StartCoroutine(coolDownAnim(warm.length));
+        temperature += rechauffe;
         if (temperature >= 100)
             temperature = 100;
     }
 
     public void Nettoyer()
     {
-            hygiene += nettoyer;
+        GetComponent<Animator>().SetTrigger("clean");
+        StartCoroutine(coolDownAnim(clean.length));
+        hygiene += nettoyer;
         if (hygiene >= 100)
             hygiene = 100;
     }
 
     public void FaireManger()
     {
-            faim += faireManger;
+        GetComponent<Animator>().SetTrigger("eat");
+        StartCoroutine(coolDownAnim(eat.length));
+        faim += faireManger;
         if (faim >= 100)
             faim = 100;
     }
 
     public void Parler()
     {
-            social += parler;
+        GetComponent<Animator>().SetTrigger("talk");
+        StartCoroutine(coolDownAnim(talk.length));
+        social += parler;
         if (social >= 100)
             social = 100;
     }
 
     public void Jouer()
     {
+        GetComponent<Animator>().SetTrigger("play");
+        StartCoroutine(coolDownAnim(play.length));
+        Debug.Log("longueur play:" + play.length);
         social += jouer;
         if (social >= 100)
             social = 100;
@@ -539,6 +564,8 @@ public class personnage : MonoBehaviour {
 
     public void Calin()
     {
+        GetComponent<Animator>().SetTrigger("hug");
+        StartCoroutine(coolDownAnim(hug.length));
         confiance += calin;
         if (confiance >= 100)
             confiance = 100;
@@ -643,14 +670,15 @@ public class personnage : MonoBehaviour {
                 //s'il ne dormait pas avant
                 if (!endormi)
                 {
-                    //feedback
+                    GetComponent<Animator>().SetTrigger("liedown");
+                    //coolDownAnim(warm.length);
                 }
                 endormi = true;
                 fatigue = false;
             }
             else
             {
-                //reveil
+                GetComponent<Animator>().SetTrigger("anim_end");
                 fatigue = false;
                 endormi = false;
             }
@@ -751,6 +779,13 @@ public class personnage : MonoBehaviour {
         {
             stresse = false;
         }
+    }
+
+    public IEnumerator coolDownAnim(float amount)
+    {
+        yield return new WaitForSeconds(amount);
+        Debug.Log("anim_end");
+        GetComponent<Animator>().SetTrigger("anim_end");
     }
 
     public IEnumerator Bulle(float amount)
