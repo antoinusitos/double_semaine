@@ -211,41 +211,59 @@ public class gamecamera : MonoBehaviour {
                                 {
                                     player.GetComponent<NavMeshAgent>().SetDestination(hit.point);
                                     move = true;
-                                    player.GetComponent<Animator>().SetTrigger("walk");
+                                    if( equipe)
+                                        player.GetComponent<Animator>().SetTrigger("walkwith");
+                                    else
+                                        player.GetComponent<Animator>().SetTrigger("walk");
                                 }
                                 //ramassage d'objets
                                 else if (hit.transform.tag == "objet")
                                 {
                                     player.GetComponent<NavMeshAgent>().SetDestination(hit.transform.position);
-                                    player.GetComponent<Animator>().SetTrigger("walk");
+                                    if (equipe)
+                                        player.GetComponent<Animator>().SetTrigger("walkwith");
+                                    else
+                                        player.GetComponent<Animator>().SetTrigger("walk");
                                     move = true;
                                 }
                                 //aller voir le personnage
                                 else if (hit.transform.tag == "personnage")
                                 {
                                     player.GetComponent<NavMeshAgent>().SetDestination(personnage.transform.position);
-                                    player.GetComponent<Animator>().SetTrigger("walk");
+                                    if (equipe)
+                                        player.GetComponent<Animator>().SetTrigger("walkwith");
+                                    else
+                                        player.GetComponent<Animator>().SetTrigger("walk");
                                     move = true;
                                 }
                                 //effectuer une action
                                 else if (hit.transform.tag == "interaction")
                                 {
                                     player.GetComponent<NavMeshAgent>().SetDestination(hit.transform.position);
-                                    player.GetComponent<Animator>().SetTrigger("walk");
+                                    if (equipe)
+                                        player.GetComponent<Animator>().SetTrigger("walkwith");
+                                    else
+                                        player.GetComponent<Animator>().SetTrigger("walk");
                                     move = true;
                                 }
                                 //aller à la cuisine
                                 else if (hit.transform.tag == "cuisine")
                                 {
                                     player.GetComponent<NavMeshAgent>().SetDestination(hit.transform.position);
-                                    player.GetComponent<Animator>().SetTrigger("walk");
+                                    if (equipe)
+                                        player.GetComponent<Animator>().SetTrigger("walkwith");
+                                    else
+                                        player.GetComponent<Animator>().SetTrigger("walk");
                                     move = true;
                                 }
                                 //aller au jardin
                                 else if (hit.transform.tag == "jardin")
                                 {
                                     player.GetComponent<NavMeshAgent>().SetDestination(hit.transform.position);
-                                    player.GetComponent<Animator>().SetTrigger("walk");
+                                    if (equipe)
+                                        player.GetComponent<Animator>().SetTrigger("walkwith");
+                                    else
+                                        player.GetComponent<Animator>().SetTrigger("walk");
                                     move = true;
                                 }
                                 else
