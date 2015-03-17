@@ -515,6 +515,7 @@ public class personnage : MonoBehaviour {
 
     public void Rechauffer()
     {
+        StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("warm");
         StartCoroutine(coolDownAnim(warm.length));
         temperature += rechauffe;
@@ -524,6 +525,7 @@ public class personnage : MonoBehaviour {
 
     public void Nettoyer()
     {
+        StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("clean");
         StartCoroutine(coolDownAnim(clean.length));
         hygiene += nettoyer;
@@ -533,6 +535,7 @@ public class personnage : MonoBehaviour {
 
     public void FaireManger()
     {
+        StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("eat");
         StartCoroutine(coolDownAnim(eat.length));
         faim += faireManger;
@@ -542,6 +545,7 @@ public class personnage : MonoBehaviour {
 
     public void Parler()
     {
+        StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("talk");
         StartCoroutine(coolDownAnim(talk.length));
         social += parler;
@@ -551,6 +555,7 @@ public class personnage : MonoBehaviour {
 
     public void Jouer()
     {
+        StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("play");
         StartCoroutine(coolDownAnim(play.length));
         Debug.Log("longueur play:" + play.length);
@@ -564,6 +569,7 @@ public class personnage : MonoBehaviour {
 
     public void Calin()
     {
+        StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("hug");
         StartCoroutine(coolDownAnim(hug.length));
         confiance += calin;
@@ -783,9 +789,9 @@ public class personnage : MonoBehaviour {
 
     public IEnumerator coolDownAnim(float amount)
     {
-        yield return new WaitForSeconds(amount);
-        Debug.Log("anim_end");
+        yield return new WaitForSeconds(amount +1);
         GetComponent<Animator>().SetTrigger("anim_end");
+        Camera.main.GetComponent<menu>().GetScroll().transform.GetChild(0).gameObject.SetActive(true);
     }
 
     public IEnumerator Bulle(float amount)

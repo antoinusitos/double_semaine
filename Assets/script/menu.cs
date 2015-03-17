@@ -40,6 +40,11 @@ public class menu : MonoBehaviour {
         }
     }
 
+    public GameObject GetScroll()
+    {
+        return scroll;
+    }
+
     public bool GetBas()
     {
         return bas;
