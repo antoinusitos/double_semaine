@@ -4,6 +4,16 @@ using System.Collections;
 
 public class personnage : MonoBehaviour {
 
+    //PARTICULES
+
+    public GameObject particule_mort;
+    public GameObject particule_puant;
+    public GameObject particule_propre;
+    public GameObject particule_dodo;
+
+    //FIN PARTICULES
+
+
     //ANIMS
 
     public AnimationClip clean;
@@ -429,8 +439,8 @@ public class personnage : MonoBehaviour {
 
     void  Froid()
     {
-        if (temperature > 0)
-            temperature -= malus_froid;
+        //if (temperature > 0)
+            //temperature -= malus_froid;
         if (temperature <= 0)
             temperature = 0;
     }

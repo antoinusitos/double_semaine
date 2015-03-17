@@ -23,4 +23,9 @@ public class cuisine : MonoBehaviour {
         slider.GetComponent<Slider>().value = 0;
     }
 
+    public void Enablebutton()
+    {
+        slider.transform.GetChild(0).transform.GetComponent<Button>().interactable = true;
+    }
+
 }
