@@ -221,7 +221,7 @@ public class personnage : MonoBehaviour {
         temps_triste = 0;
         temps_triste_max = 60;
 
-        regenSommeil = .1f;
+        regenSommeil = 4f;
 
         temps_emoticone = 5;
 
@@ -229,32 +229,32 @@ public class personnage : MonoBehaviour {
 
         //VIE
 
-        dps_endolori = .1f;
-        dps_froid = .1f;
-        dps_sale = .1f;
-        dps_affame = .1f;
-        dps_triste = .1f;
-        dps_stress = .1f;
-        dps_ennui = .1f;
+        dps_endolori = .45f;
+        dps_froid = .02f;
+        dps_sale = .65f;
+        dps_affame = .9f;
+        dps_triste = .25f;
+        dps_stress = .35f;
+        dps_ennui = .05f;
 
-        dps_vie = 0.1f;
+        dps_vie = 0.05f;
 
         vie = 100;
         seuil_haut = 50;
         seuil_bas = 15;
 
-        soinVie = 20;
+        soinVie = 10;
 
         //FIN VIE
 
         //MALUS
 
         malus_endolori_sommeil = .1f;
-        malus_endolori_tempcorp = .1f;
+        malus_endolori_tempcorp = .5f;
         malus_froid = .1f;
         malus_affame = .1f;
         malus_triste_hygiene = .1f;
-        malus_triste_confiance = .1f;
+        malus_triste_confiance = .3f;
         malus_stresse_hygiene = .1f;
         malus_stresse_sommeil = .1f;
         malus_stresse_epanouissement = .1f;
@@ -265,13 +265,13 @@ public class personnage : MonoBehaviour {
 
         //INTERACTION
 
-        soin = 20;
-        rechauffe = 20;
-        nettoyer = 20;
-        faireManger = 20;
-        parler = 20;
-        jouer = 20;
-        calin = 20;
+        soin = 6;
+        rechauffe = 18;
+        nettoyer = 15;
+        faireManger = 8;
+        parler = 6;
+        jouer = 6;
+        calin = 7;
 
         //FIN INTERACTION
 
@@ -279,13 +279,17 @@ public class personnage : MonoBehaviour {
         //STATISTIQUES
 
         douleur = 85;
-        social = 50;
-        epanouissement = 50;
-        faim = 80;
-        sommeil = 100;
         temperature = 75;
         hygiene = 50;
+        faim = 80;
+        social = 50;
         confiance = 50;
+        epanouissement = 32;
+        
+        sommeil = 100;
+        
+       
+       
 
         //FIN DES STATISTIQUES
     }
@@ -307,26 +311,26 @@ public class personnage : MonoBehaviour {
             if (Camera.main.GetComponent<menu>().GetBas())
             {
                 if (douleur > 0)
-                    douleur -= 0.5f;
+                    douleur -= 0.16f;
                 if (douleur <= 0)
                     douleur = 0;
                 if (social > 0)
-                    social -= 0.33f;
+                    social -= 0.123f;
                 if (social <= 0)
                     social = 0;
                 if (epanouissement > 0)
-                    epanouissement -= 0.25f;
+                    epanouissement -= 0.15f;
                 if (epanouissement <= 0)
                     epanouissement = 0;
                 if (faim > 0)
-                    faim -= 0.5f;
+                    faim -= 0.15f;
                 if (faim <= 0)
                     faim = 0;
 
                 if (!endormi)
                 {
                     if (sommeil > 0)
-                        sommeil -= 0.5f;
+                        sommeil -= 0.45f;
                     if (sommeil <= 0)
                         sommeil = 0;
                 }
@@ -730,7 +734,7 @@ public class personnage : MonoBehaviour {
         else
         {
             //en train de dormir
-            if (sommeil <= 50)
+            if (sommeil <= 80)
             {
                 //s'il ne dormait pas avant
                 if (!endormi)
