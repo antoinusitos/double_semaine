@@ -39,6 +39,18 @@ public class triggerPersonnage : MonoBehaviour {
         }
     }
 
+    void OnTriggerStay(Collider other)
+    {
+        if (other.transform.tag == "Player")
+        {
+            if (!perso.GetEndormi())
+            {
+                other.transform.rotation = Quaternion.Euler(new Vector3(0, 256, 0));
+                Debug.Log(transform.parent.transform.name);
+            }
+        }
+    }
+
     void OnTriggerExit(Collider other)
     {
         if (other.transform.tag == "Player")
