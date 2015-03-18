@@ -93,6 +93,12 @@ public class gamecamera : MonoBehaviour {
         destination = obj;
     }
 
+    public void ResetIdle()
+    {
+        player.GetComponent<Animator>().SetBool("equipe", false);
+        player.GetComponent<Animator>().SetTrigger("end_anim");
+    }
+
 	void Update () {
 
         if (reseting)
@@ -152,9 +158,13 @@ public class gamecamera : MonoBehaviour {
                     {
                         if (equipe)
                         {
+                            player.GetComponent<player>().DonnerManger();
                             equipe = false;
                             Destroy(objet);
                             destination = null;
+                            player.GetComponent<Animator>().SetBool("equipe", false);
+                            player.GetComponent<Animator>().SetTrigger("end_anim");
+                            Debug.Log("fin");
                         }
                     }
                 }

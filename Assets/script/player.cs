@@ -65,7 +65,6 @@ public class player : MonoBehaviour {
         GetComponent<Animator>().SetTrigger("give");
         GetComponent<Animator>().SetBool("equipe", false);
         StartCoroutine(coolDownAnim(give.length));
-        
     }
 
     public void FaireManger()

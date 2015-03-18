@@ -522,6 +522,9 @@ public class personnage : MonoBehaviour {
 
     public void Medecine()
     {
+        StopCoroutine("coolDownAnim");
+        GetComponent<Animator>().SetTrigger("eat");
+        StartCoroutine(coolDownAnim(eat.length));
         douleur += soin;
         if (douleur >= 100)
             douleur = 100;
