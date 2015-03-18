@@ -817,9 +817,11 @@ public class personnage : MonoBehaviour {
 
     public IEnumerator coolDownAnim(float amount)
     {
+        Debug.Log("debut cooldown:" + amount);
         yield return new WaitForSeconds(amount +1);
         GetComponent<Animator>().SetTrigger("anim_end");
         Camera.main.GetComponent<menu>().GetScroll().transform.GetChild(0).gameObject.SetActive(true);
+        Debug.Log("fin cooldown:" + amount);
     }
 
     public IEnumerator Bulle(float amount)

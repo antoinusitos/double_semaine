@@ -18,6 +18,7 @@ public class menu : MonoBehaviour {
     public GameObject cuisine;
     public GameObject interaction;
     public GameObject jeu;
+    public GameObject jour;
 
     private bool descente;
     private bool monte;
@@ -63,6 +64,7 @@ public class menu : MonoBehaviour {
             cuisine.SetActive(false);
             interaction.SetActive(false);
             jeu.SetActive(false);
+            jour.SetActive(false);
 
         }
     }
@@ -92,6 +94,7 @@ public class menu : MonoBehaviour {
                 transform.position = positionfini.transform.position;
                 descente = false;
                 bas = true;
+                jour.SetActive(true);
                 Camera.main.GetComponent<gamecamera>().Debloquer();
             }
         }

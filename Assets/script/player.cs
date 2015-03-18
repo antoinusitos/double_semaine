@@ -34,6 +34,7 @@ public class player : MonoBehaviour {
 
     public void Medecine()
     {
+        Camera.main.GetComponent<gamecamera>().Bloquer();
         StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("give");
         StartCoroutine(coolDownAnim(give.length));
@@ -42,6 +43,7 @@ public class player : MonoBehaviour {
 
     public void Rechauffer()
     {
+        Camera.main.GetComponent<gamecamera>().Bloquer();
         StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("warm");
         StartCoroutine(coolDownAnim(warm.length));
@@ -49,6 +51,7 @@ public class player : MonoBehaviour {
 
     public void Nettoyer()
     {
+        Camera.main.GetComponent<gamecamera>().Bloquer();
         StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("clean");
         StartCoroutine(coolDownAnim(clean.length));
@@ -57,6 +60,7 @@ public class player : MonoBehaviour {
 
     public void DonnerManger()
     {
+        Camera.main.GetComponent<gamecamera>().Bloquer();
         StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("give");
         StartCoroutine(coolDownAnim(give.length));
@@ -65,6 +69,7 @@ public class player : MonoBehaviour {
 
     public void FaireManger()
     {
+        Camera.main.GetComponent<gamecamera>().Bloquer();
         StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("cuisine");
         StartCoroutine(coolDownAnim(cuisine.length));
@@ -73,6 +78,7 @@ public class player : MonoBehaviour {
 
     public void Parler()
     {
+        Camera.main.GetComponent<gamecamera>().Bloquer();
         StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("talk");
         StartCoroutine(coolDownAnim(talk.length));
@@ -81,6 +87,7 @@ public class player : MonoBehaviour {
 
     public void Jouer()
     {
+        Camera.main.GetComponent<gamecamera>().Bloquer();
         StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("play");
         StartCoroutine(coolDownAnim(play.length));
@@ -89,6 +96,7 @@ public class player : MonoBehaviour {
 
     public void Calin()
     {
+        Camera.main.GetComponent<gamecamera>().Bloquer();
         StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("hug");
         StartCoroutine(coolDownAnim(hug.length));
@@ -97,6 +105,7 @@ public class player : MonoBehaviour {
 
     public void Jardiner()
     {
+        Camera.main.GetComponent<gamecamera>().Bloquer();
         StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("jardin");
         StartCoroutine(coolDownAnim(jardin.length));
@@ -110,6 +119,7 @@ public class player : MonoBehaviour {
         yield return new WaitForSeconds(amount + 1);
         GetComponent<Animator>().SetTrigger("end_anim");
         Camera.main.GetComponent<menu>().GetScroll().transform.GetChild(0).gameObject.SetActive(true);
+        Camera.main.GetComponent<gamecamera>().Debloquer();
     }
 
 }

@@ -58,6 +58,7 @@
      <Compile Include="Assets\script\interactionUI.cs" />
      <Compile Include="Assets\script\interactionboutonpersonnage.cs" />
      <Compile Include="Assets\script\jardin.cs" />
+     <Compile Include="Assets\script\jours.cs" />
      <Compile Include="Assets\script\lookAt.cs" />
      <Compile Include="Assets\script\menu.cs" />
      <Compile Include="Assets\script\objet.cs" />

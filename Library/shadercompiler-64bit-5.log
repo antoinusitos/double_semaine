@@ -35,3 +35,9 @@ Cmd: compileSnippet
   api=9 type=1 insize=1642 outsize=7 kw=SOFTPARTICLES_OFF ok=1
 Cmd: compileSnippet
   api=9 type=0 insize=990 outsize=721 kw= ok=1
+Unhandled exception: Readfile from pipe failed. GLE=Le canal de communication a été fermé.
+
+
+Quitting shader compiler process
+
+Crashed!

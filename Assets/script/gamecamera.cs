@@ -83,6 +83,11 @@ public class gamecamera : MonoBehaviour {
         bloque = false;
     }
 
+    public void Bloquer()
+    {
+        bloque = true;
+    }
+
     public void SetDestination(GameObject obj)
     {
         destination = obj;
