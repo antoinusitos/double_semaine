@@ -99,6 +99,8 @@ public class personnage : MonoBehaviour {
 
     private bool Alive;
 
+    private float soinVie;
+
     //FIN VIE
 
     //MALUS
@@ -241,6 +243,8 @@ public class personnage : MonoBehaviour {
         seuil_haut = 50;
         seuil_bas = 15;
 
+        soinVie = 20;
+
         //FIN VIE
 
         //MALUS
@@ -326,6 +330,14 @@ public class personnage : MonoBehaviour {
                     if (sommeil <= 0)
                         sommeil = 0;
                 }
+                if (endormi)
+                {
+                    sommeil += regenSommeil;
+                    if (sommeil >= 100)
+                    {
+                        sommeil = 100;
+                    }
+                }
                 if (hygiene > 0)
                     hygiene -= 0.2f;
                 if (hygiene <= 0)
@@ -375,7 +387,7 @@ public class personnage : MonoBehaviour {
             vie = 0;
             Alive = false;
             Paul_matColorShift.isDead = true;
-            Camera.main.GetComponent<menu>().Monte();
+            Camera.main.GetComponent<menu>().Mort();
             particule_mort.GetComponent<ParticleSystem>().enableEmission = false;
         }
     }
@@ -400,14 +412,6 @@ public class personnage : MonoBehaviour {
                 {
                     Froid();
                     temps_froid = 0;
-                }
-            }
-            if (endormi)
-            {
-                sommeil += regenSommeil;
-                if(sommeil >= 100)
-                {
-                    sommeil = 100;
                 }
             }
             if (affame)
@@ -548,6 +552,7 @@ public class personnage : MonoBehaviour {
         GetComponent<Animator>().SetTrigger("eat");
         StartCoroutine(coolDownAnim(eat.length));
         douleur += soin;
+        vie += soinVie;
         if (douleur >= 100)
             douleur = 100;
 

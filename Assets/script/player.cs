@@ -27,6 +27,11 @@ public class player : MonoBehaviour {
 
     void Awake()
     {
+        Resetstat();
+    }
+
+    public void Resetstat()
+    {
         medoc = 0;
 
         GrainesMedoc = 1;

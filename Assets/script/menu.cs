@@ -19,8 +19,10 @@ public class menu : MonoBehaviour {
     public GameObject interaction;
     public GameObject jeu;
     public GameObject jour;
+    public GameObject particules;
 
     public GameObject personnage;
+    public GameObject player;
 
     private bool descente;
     private bool monte;
@@ -60,6 +62,24 @@ public class menu : MonoBehaviour {
 
     public void Monte()
     {
+        if (!descente)
+        {
+            monte = true;
+            descente = false;
+            jardin1.SetActive(false);
+            jardin2.SetActive(false);
+            jardin3.SetActive(false);
+            scroll.SetActive(false);
+            cuisine.SetActive(false);
+            interaction.SetActive(false);
+            jeu.SetActive(false);
+            jour.SetActive(false);
+            particules.SetActive(false);
+        }
+    }
+
+    public void Mort()
+    {
         StartCoroutine("coolDownMonte");
     }
 
@@ -78,7 +98,9 @@ public class menu : MonoBehaviour {
             interaction.SetActive(false);
             jeu.SetActive(false);
             jour.SetActive(false);
-
+            particules.SetActive(false);
+            player.GetComponent<player>().Resetstat();
+            jour.GetComponent<jours>().Reset();
         }
     }
 

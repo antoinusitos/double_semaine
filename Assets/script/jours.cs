@@ -18,6 +18,14 @@ public class jours : MonoBehaviour {
         texte.GetComponent<Text>().text = jour.ToString();
 	}
 	
+    public void Reset()
+    {
+        tempsActuel = 0;
+        longeurJour = 3600;
+        jour = 1;
+        texte.GetComponent<Text>().text = jour.ToString();
+    }
+
 	void Update () {
         tempsActuel++;
         if(tempsActuel == longeurJour)
