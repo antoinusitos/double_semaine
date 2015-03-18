@@ -20,6 +20,8 @@ public class menu : MonoBehaviour {
     public GameObject jeu;
     public GameObject jour;
 
+    public GameObject personnage;
+
     private bool descente;
     private bool monte;
 
@@ -36,6 +38,11 @@ public class menu : MonoBehaviour {
     {
         if (!monte)
         {
+            if (!personnage.GetComponent<personnage>().GetAlive())
+            {
+                personnage.GetComponent<personnage>().Reset();
+                personnage.transform.GetChild(2).GetComponent<Paul_matColorShift>().ResetHealth();
+            }
             descente = true;
             monte = false;
         }

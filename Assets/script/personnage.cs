@@ -154,8 +154,19 @@ public class personnage : MonoBehaviour {
 
 
 	void Start () {
+        Reset();
 
+        InvokeRepeating("baisserStats", 1.0f, 1.0f);
 
+	}
+
+    public bool GetAlive()
+    {
+        return Alive;
+    }
+
+    public void Reset()
+    {
         particule_mort.GetComponent<ParticleSystem>().enableEmission = false;
         particule_puant.GetComponent<ParticleSystem>().enableEmission = false;
         particule_puant.transform.GetChild(0).transform.GetComponent<ParticleSystem>().enableEmission = false;
@@ -186,7 +197,7 @@ public class personnage : MonoBehaviour {
         //TIMERS
 
         temps_affame = 0;
-        temps_affame_max = 60 ;
+        temps_affame_max = 60;
         temps_endolori = 0;
         temps_endolori_max = 60;
         temps_ennui = 0;
@@ -234,7 +245,7 @@ public class personnage : MonoBehaviour {
         malus_stresse_sommeil = .1f;
         malus_stresse_epanouissement = .1f;
         malus_ennuye_tempcorp = .1f;
-        malus_ennuye_faim =.1f;
+        malus_ennuye_faim = .1f;
 
         //FIN MALUS
 
@@ -263,10 +274,7 @@ public class personnage : MonoBehaviour {
         confiance = 50;
 
         //FIN DES STATISTIQUES
-
-        InvokeRepeating("baisserStats", 1.0f, 1.0f);
-
-	}
+    }
 	
     public bool GetEndormi()
     {
@@ -330,6 +338,8 @@ public class personnage : MonoBehaviour {
                 if (ennuye)
                     vie -= dps_ennui;
 
+                Paul_matColorShift.health = vie / 100;
+
                 CheckVie();
 
                 RefreshState();
@@ -354,6 +364,7 @@ public class personnage : MonoBehaviour {
         {
             vie = 0;
             Alive = false;
+            Paul_matColorShift.isDead = true;
             Camera.main.GetComponent<menu>().Monte();
             particule_mort.GetComponent<ParticleSystem>().enableEmission = false;
         }
