@@ -622,6 +622,7 @@ public class personnage : MonoBehaviour {
 
     public void Calin()
     {
+        Camera.main.GetComponent<Paul_CamZoom>().zooming = true;
         StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("hug");
         StartCoroutine(coolDownAnim(hug.length));
@@ -856,12 +857,11 @@ public class personnage : MonoBehaviour {
 
     public IEnumerator coolDownAnim(float amount)
     {
-        Debug.Log("debut cooldown:" + amount);
-        yield return new WaitForSeconds(amount +1);
+        yield return new WaitForSeconds(amount);
         GetComponent<Animator>().SetTrigger("anim_end");
         Camera.main.GetComponent<menu>().GetScroll().transform.GetChild(0).gameObject.SetActive(true);
-        Debug.Log("fin cooldown:" + amount);
         GetComponent<AudioSource>().Stop();
+        Camera.main.GetComponent<Paul_CamZoom>().zooming = false;
     }
 
     public IEnumerator Bulle(float amount)
@@ -870,5 +870,11 @@ public class personnage : MonoBehaviour {
         emotion.gameObject.SetActive(false);
         bulle.gameObject.SetActive(false);
         GetComponent<AudioSource>().Stop();
+    }
+
+    public IEnumerator afficherUI()
+    {
+        yield return new WaitForSeconds(eat.length);
+        Camera.main.GetComponent<menu>().scroll.SetActive(true);
     }
 }

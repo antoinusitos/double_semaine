@@ -28,6 +28,7 @@ public class triggerPersonnage : MonoBehaviour {
                     other.transform.GetComponent<Animator>().SetBool("equipe", false);
                     other.transform.GetComponent<Animator>().SetTrigger("end_anim");
                     Camera.main.GetComponent<gamecamera>().Desequiper();
+                    perso.StartCoroutine("afficherUI");
                 }
                 else
                 {
