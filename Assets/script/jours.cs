@@ -13,7 +13,7 @@ public class jours : MonoBehaviour {
 
 	void Start () {
         tempsActuel = 0;
-        longeurJour = 1000;
+        longeurJour = 3600;
         jour = 1;
         texte.GetComponent<Text>().text = jour.ToString();
 	}
@@ -25,6 +25,10 @@ public class jours : MonoBehaviour {
             jour++;
             texte.GetComponent<Text>().text = jour.ToString();
             tempsActuel = 0;
+            player.GrainesDeco++;
+            player.GrainesMedoc++;
+            player.GrainesMusic++;
+
         }
 	}
 }

@@ -15,6 +15,8 @@ public class player : MonoBehaviour {
     public AnimationClip jardin;
     public AnimationClip give;
 
+    public AudioClip parleSound;
+
     //FIN ANIM
 
     public static int medoc;
@@ -78,6 +80,7 @@ public class player : MonoBehaviour {
 
     public void Parler()
     {
+        GetComponent<AudioSource>().PlayOneShot(parleSound);
         Camera.main.GetComponent<gamecamera>().Bloquer();
         StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("talk");
@@ -120,6 +123,7 @@ public class player : MonoBehaviour {
         GetComponent<Animator>().SetTrigger("end_anim");
         Camera.main.GetComponent<menu>().GetScroll().transform.GetChild(0).gameObject.SetActive(true);
         Camera.main.GetComponent<gamecamera>().Debloquer();
+        GetComponent<AudioSource>().Stop();
     }
 
 }

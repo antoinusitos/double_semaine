@@ -35,6 +35,9 @@ public class jardin : MonoBehaviour {
     public GameObject effet1;
     public GameObject effet2;
 
+    public AudioClip planterSound;
+    public AudioClip collectersound;
+
 
 	void Start () 
     {
@@ -76,6 +79,7 @@ public class jardin : MonoBehaviour {
                     effet2.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
                 PotVide++;
                 pots[i].GetComponent<Pot>().Vider();
+                GetComponent<AudioSource>().PlayOneShot(collectersound);
             }
         }
     }
@@ -173,6 +177,7 @@ public class jardin : MonoBehaviour {
         {
             if(GrainesMedoc > 0 && PotVide > 0)
             {
+                GetComponent<AudioSource>().PlayOneShot(planterSound);
                 garden.GetComponent<Animator>().SetTrigger("move");
                 GrainesMedoc--;
                 player.GrainesMedoc--;
@@ -186,6 +191,7 @@ public class jardin : MonoBehaviour {
         {
             if (GrainesDeco > 0 && PotVide > 0)
             {
+                GetComponent<AudioSource>().PlayOneShot(planterSound);
                 garden.GetComponent<Animator>().SetTrigger("move");
                 GrainesDeco--;
                 player.GrainesDeco--;
@@ -199,6 +205,7 @@ public class jardin : MonoBehaviour {
         {
             if (GrainesMusic > 0 && PotVide > 0)
             {
+                GetComponent<AudioSource>().PlayOneShot(planterSound);
                 garden.GetComponent<Animator>().SetTrigger("move");
                 PotVide--;
                 player.GrainesMusic--;

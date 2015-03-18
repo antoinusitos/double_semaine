@@ -60,6 +60,12 @@ public class menu : MonoBehaviour {
 
     public void Monte()
     {
+        StartCoroutine("coolDownMonte");
+    }
+
+    IEnumerator coolDownMonte()
+    {
+        yield return new WaitForSeconds(6);
         if (!descente)
         {
             monte = true;

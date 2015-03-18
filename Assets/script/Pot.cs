@@ -87,7 +87,7 @@ public class Pot : MonoBehaviour {
         }
         else if (type == 2)
         {
-            //changer le son
+            Camera.main.GetComponent<gamecamera>().AddSound();
             Destroy(transform.GetChild(1).gameObject);
         }
         Reset();

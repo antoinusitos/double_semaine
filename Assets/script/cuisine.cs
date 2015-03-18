@@ -8,9 +8,21 @@ public class cuisine : MonoBehaviour {
 
     public GameObject slider;
 
+    public AudioClip cuisiner;
+
     public GameObject GetPlat()
     {
         return plat;
+    }
+
+    public void playSound()
+    {
+        GetComponent<AudioSource>().PlayOneShot(cuisiner);
+    }
+
+    public void stopSound()
+    {
+        GetComponent<AudioSource>().Stop();
     }
 
     public void Addvalue()

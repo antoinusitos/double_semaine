@@ -4,6 +4,16 @@ using System.Collections;
 
 public class personnage : MonoBehaviour {
 
+    //SOUND
+
+    public AudioClip dortSound;
+    public AudioClip parleSound;
+    public AudioClip ennuiSound;
+    public AudioClip mangeSound;
+
+    //FIN SOUND
+
+
     //PARTICULES
 
     public GameObject particule_mort;
@@ -533,6 +543,7 @@ public class personnage : MonoBehaviour {
 
     public void Medecine()
     {
+        GetComponent<AudioSource>().PlayOneShot(mangeSound);
         StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("eat");
         StartCoroutine(coolDownAnim(eat.length));
@@ -567,6 +578,7 @@ public class personnage : MonoBehaviour {
 
     public void FaireManger()
     {
+        GetComponent<AudioSource>().PlayOneShot(mangeSound);
         StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("eat");
         StartCoroutine(coolDownAnim(eat.length));
@@ -577,6 +589,7 @@ public class personnage : MonoBehaviour {
 
     public void Parler()
     {
+        GetComponent<AudioSource>().PlayOneShot(parleSound);
         StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("talk");
         StartCoroutine(coolDownAnim(talk.length));
@@ -706,6 +719,7 @@ public class personnage : MonoBehaviour {
                 particule_dodo.GetComponent<ParticleSystem>().enableEmission = true;
                 GetComponent<Animator>().SetTrigger("liedown");
                 endormi = true;
+                GetComponent<AudioSource>().PlayOneShot(dortSound);
             }
         }
         else
@@ -729,6 +743,7 @@ public class personnage : MonoBehaviour {
                 coolDownAnim(liedown.length); ;
                 fatigue = false;
                 endormi = false;
+                GetComponent<AudioSource>().Stop();
             }
         }
 
@@ -803,6 +818,7 @@ public class personnage : MonoBehaviour {
                 bulle.gameObject.SetActive(true);
                 emotion.GetComponent<Image>().sprite = sprite_ennuye;
                 StartCoroutine("Bulle", temps_emoticone);
+                GetComponent<AudioSource>().PlayOneShot(ennuiSound);
             }
             ennuye = true;
         }
@@ -836,6 +852,7 @@ public class personnage : MonoBehaviour {
         GetComponent<Animator>().SetTrigger("anim_end");
         Camera.main.GetComponent<menu>().GetScroll().transform.GetChild(0).gameObject.SetActive(true);
         Debug.Log("fin cooldown:" + amount);
+        GetComponent<AudioSource>().Stop();
     }
 
     public IEnumerator Bulle(float amount)
@@ -843,5 +860,6 @@ public class personnage : MonoBehaviour {
         yield return new WaitForSeconds(amount);
         emotion.gameObject.SetActive(false);
         bulle.gameObject.SetActive(false);
+        GetComponent<AudioSource>().Stop();
     }
 }

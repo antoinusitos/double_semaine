@@ -35,6 +35,8 @@ public class gamecamera : MonoBehaviour {
 
     private bool bloque;
 
+    public GameObject[] addsons;
+
     void Start()
     {
         move = false;
@@ -142,6 +144,7 @@ public class gamecamera : MonoBehaviour {
                 {
                     preparing = true;
                     //destination.transform.GetChild(0).GetComponent<showUICuisine>().Hide();
+                    destination.GetComponent<cuisine>().playSound();
                     destination.transform.GetChild(1).GetComponent<Animator>().SetBool("click", true);
                     GameObject plat = (GameObject)Instantiate(destination.GetComponent<cuisine>().GetPlat(), transform.position, Quaternion.identity);
                     player.GetComponent<player>().FaireManger();
@@ -308,6 +311,19 @@ public class gamecamera : MonoBehaviour {
 
 	}
 
+    public void AddSound()
+    {
+        int rand = (int)Random.Range(1, 4);
+        for(int i=0; i < addsons.Length; i++)
+        {
+            if(i == rand)
+            {
+                GameObject son = (GameObject)Instantiate(addsons[i], transform.position, Quaternion.identity);
+                son.transform.parent = transform;
+            }
+        }
+    }
+
     public IEnumerator Preparation(float amount, Transform theObject, GameObject from)
     {
         player.GetComponent<NavMeshAgent>().SetDestination(player.transform.position);
@@ -331,7 +347,7 @@ public class gamecamera : MonoBehaviour {
             objet = theObject.gameObject;
             preparing = false;
             from.transform.GetChild(1).GetComponent<Animator>().SetBool("click", false);
-
+            from.GetComponent<cuisine>().stopSound();
             player.GetComponent<Animator>().SetTrigger("end_anim");
         }
         else
