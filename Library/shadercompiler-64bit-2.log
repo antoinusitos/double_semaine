@@ -1,40 +1,34 @@
 Base path: C:/Program Files/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-2-2488
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-2-5628
 Cmd: getPlatforms
 Cmd: compileSnippet
-  api=9 type=0 insize=977 outsize=8457 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON ok=1
+  api=9 type=0 insize=982 outsize=8999 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON _ALPHATEST_ON _EMISSION ok=1
 Cmd: compileSnippet
-  api=9 type=0 insize=934 outsize=6897 kw=SPOT SHADOWS_OFF ok=1
+  api=9 type=1 insize=982 outsize=7 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHATEST_ON _EMISSION ok=1
 Cmd: compileSnippet
-  api=9 type=0 insize=934 outsize=8746 kw=POINT SHADOWS_CUBE SHADOWS_SOFT ok=1
+  api=9 type=0 insize=1152 outsize=6617 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF UNITY_HDR_ON _EMISSION ok=1
 Cmd: compileSnippet
-  api=9 type=1 insize=934 outsize=7 kw=SPOT SHADOWS_DEPTH SHADOWS_NATIVE ok=1
+  api=5 type=0 insize=886 outsize=8850 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON _EMISSION ok=1
 Cmd: compileSnippet
-  api=9 type=1 insize=934 outsize=7 kw=POINT_COOKIE SHADOWS_CUBE SHADOWS_SOFT ok=1
+  api=5 type=0 insize=886 outsize=7689 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHATEST_ON _EMISSION ok=1
 Cmd: compileSnippet
-  api=9 type=0 insize=1148 outsize=6195 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF UNITY_HDR_ON ok=1
+  api=9 type=0 insize=886 outsize=9042 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON _ALPHATEST_ON _EMISSION ok=1
 Cmd: compileSnippet
-  api=5 type=0 insize=903 outsize=8495 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON ok=1
+  api=5 type=1 insize=886 outsize=6 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _EMISSION ok=1
 Cmd: compileSnippet
-  api=5 type=1 insize=903 outsize=6 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+  api=9 type=1 insize=886 outsize=7 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHATEST_ON _EMISSION ok=1
 Cmd: compileSnippet
-  api=9 type=0 insize=812 outsize=5761 kw=DIRECTIONAL SHADOWS_OFF ok=1
+  api=9 type=0 insize=634 outsize=768 kw= ok=1
 Cmd: compileSnippet
-  api=9 type=0 insize=812 outsize=6289 kw=DIRECTIONAL_COOKIE SHADOWS_OFF ok=1
+  api=9 type=0 insize=5406 outsize=1376 kw= ok=1
 Cmd: compileSnippet
-  api=9 type=0 insize=812 outsize=7459 kw=POINT_COOKIE SHADOWS_CUBE ok=1
+  api=9 type=0 insize=2189 outsize=1119 kw= ok=1
 Cmd: compileSnippet
-  api=9 type=1 insize=812 outsize=7 kw=SPOT SHADOWS_OFF ok=1
+  api=9 type=0 insize=2193 outsize=1119 kw= ok=1
 Cmd: compileSnippet
-  api=5 type=1 insize=812 outsize=6 kw=SPOT SHADOWS_DEPTH SHADOWS_NATIVE ok=1
+  api=9 type=0 insize=2195 outsize=1132 kw= ok=1
 Cmd: compileSnippet
-  api=5 type=1 insize=812 outsize=6 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=600 outsize=7 kw=SHADOWS_DEPTH ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=1705 outsize=7 kw=SOFTPARTICLES_OFF ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=1642 outsize=7 kw=SOFTPARTICLES_ON ok=1
+  api=9 type=1 insize=10184 outsize=7 kw= ok=1
 Unhandled exception: Readfile from pipe failed. GLE=Le canal de communication a été fermé.
 
 

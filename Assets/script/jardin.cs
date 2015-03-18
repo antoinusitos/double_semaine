@@ -29,6 +29,12 @@ public class jardin : MonoBehaviour {
     public GameObject[] plantesMusic2;
     public GameObject[] plantesMusic3;
 
+    public GameObject garden;
+
+    public GameObject effet0;
+    public GameObject effet1;
+    public GameObject effet2;
+
 
 	void Start () 
     {
@@ -62,6 +68,12 @@ public class jardin : MonoBehaviour {
             bool fini = pots[i].GetComponent<Pot>().GetFini();
             if (fini == true)
             {
+                if (i == 0)
+                    effet0.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
+                else if (i == 1)
+                    effet1.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
+                else if (i == 2)
+                    effet2.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
                 PotVide++;
                 pots[i].GetComponent<Pot>().Vider();
             }
@@ -161,6 +173,7 @@ public class jardin : MonoBehaviour {
         {
             if(GrainesMedoc > 0 && PotVide > 0)
             {
+                garden.GetComponent<Animator>().SetTrigger("move");
                 GrainesMedoc--;
                 player.GrainesMedoc--;
                 PotVide--;
@@ -173,6 +186,7 @@ public class jardin : MonoBehaviour {
         {
             if (GrainesDeco > 0 && PotVide > 0)
             {
+                garden.GetComponent<Animator>().SetTrigger("move");
                 GrainesDeco--;
                 player.GrainesDeco--;
                 PotVide--;
@@ -185,6 +199,7 @@ public class jardin : MonoBehaviour {
         {
             if (GrainesMusic > 0 && PotVide > 0)
             {
+                garden.GetComponent<Animator>().SetTrigger("move");
                 PotVide--;
                 player.GrainesMusic--;
                 GrainesMusic--;

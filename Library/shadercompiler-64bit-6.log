@@ -1,36 +1,28 @@
 Base path: C:/Program Files/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-6-5532
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-6-5816
 Cmd: getPlatforms
 Cmd: compileSnippet
-  api=9 type=0 insize=934 outsize=6839 kw=POINT_COOKIE SHADOWS_OFF ok=1
+  api=9 type=0 insize=982 outsize=8109 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _EMISSION ok=1
 Cmd: compileSnippet
-  api=9 type=1 insize=934 outsize=7 kw=POINT_COOKIE SHADOWS_OFF ok=1
+  api=9 type=1 insize=1152 outsize=7 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _EMISSION ok=1
 Cmd: compileSnippet
-  api=9 type=0 insize=751 outsize=721 kw=SHADOWS_CUBE ok=1
+  api=9 type=0 insize=886 outsize=7429 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _EMISSION ok=1
 Cmd: compileSnippet
-  api=5 type=0 insize=903 outsize=7748 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON ok=1
+  api=5 type=0 insize=886 outsize=8330 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON _ALPHATEST_ON _EMISSION ok=1
 Cmd: compileSnippet
-  api=9 type=1 insize=903 outsize=7 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+  api=5 type=1 insize=886 outsize=6 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHATEST_ON _EMISSION ok=1
 Cmd: compileSnippet
-  api=9 type=0 insize=812 outsize=6660 kw=POINT_COOKIE SHADOWS_OFF ok=1
+  api=9 type=0 insize=4903 outsize=1925 kw= ok=1
 Cmd: compileSnippet
-  api=5 type=0 insize=812 outsize=6601 kw=DIRECTIONAL SHADOWS_SCREEN ok=1
+  api=9 type=0 insize=4893 outsize=2214 kw= ok=1
 Cmd: compileSnippet
-  api=9 type=0 insize=812 outsize=6982 kw=DIRECTIONAL_COOKIE SHADOWS_SCREEN SHADOWS_NATIVE ok=1
+  error: 2 plat 9 at (0): Can't find include file frag_ao.cginc\nCompiling Vertex program
+  error: 2 plat 9 at (41): '' : Include callback failed\nCompiling Vertex program
+  api=9 type=0 insize=2216 outsize=0 kw= ok=0
 Cmd: compileSnippet
-  api=9 type=1 insize=812 outsize=7 kw=POINT_COOKIE SHADOWS_OFF ok=1
-Cmd: compileSnippet
-  api=5 type=1 insize=812 outsize=6 kw=DIRECTIONAL_COOKIE SHADOWS_OFF ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=812 outsize=7 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=600 outsize=721 kw=SHADOWS_CUBE ok=1
-Cmd: compileSnippet
-  api=9 type=0 insize=1705 outsize=1779 kw=SOFTPARTICLES_ON ok=1
-Cmd: compileSnippet
-  api=5 type=0 insize=1642 outsize=1757 kw=SOFTPARTICLES_ON ok=1
-Cmd: compileSnippet
-  api=9 type=1 insize=990 outsize=7 kw= ok=1
+  error: 2 plat 9 at (0): Can't find include file frag_ao.cginc\nCompiling Vertex program
+  error: 2 plat 9 at (41): '' : Include callback failed\nCompiling Vertex program
+  api=9 type=0 insize=2998 outsize=0 kw= ok=0
 Unhandled exception: Readfile from pipe failed. GLE=Le canal de communication a été fermé.
 
 

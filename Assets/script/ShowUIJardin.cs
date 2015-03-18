@@ -8,10 +8,13 @@ public class ShowUIJardin : MonoBehaviour {
     public GameObject ui2;
     public GameObject ui3;
 
+    public GameObject garden;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == "Player")
         {
+            garden.GetComponent<Animator>().SetTrigger("move");
             transform.parent.GetComponent<jardin>().ViderPot();
             if (transform.parent.GetComponent<jardin>().GetPotVide() > 0)
             {

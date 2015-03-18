@@ -876,3 +876,185 @@ Cmd: compileSnippet
   api=4 type=0 insize=1642 outsize=2022 kw=SOFTPARTICLES_ON ok=1
 Cmd: compileSnippet
   api=4 type=1 insize=1642 outsize=1599 kw=SOFTPARTICLES_ON ok=1
+Cmd: compileSnippet
+  api=9 type=0 insize=982 outsize=9497 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON _EMISSION ok=1
+Cmd: compileSnippet
+  api=9 type=1 insize=1152 outsize=7 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHATEST_ON _EMISSION ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=886 outsize=6716 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _EMISSION ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=886 outsize=8874 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON _EMISSION ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=886 outsize=9101 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON _ALPHATEST_ON _EMISSION ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=886 outsize=6 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _EMISSION ok=1
+Cmd: compileSnippet
+  error: 2 plat 5 at (0): Can't find include file frag_ao.cginc\nCompiling Vertex program
+  error: 2 plat 5 at (41): '' : Include callback failed\nCompiling Vertex program
+  api=5 type=0 insize=1952 outsize=0 kw= ok=0
+Cmd: compileSnippet
+  api=5 type=1 insize=1952 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  error: 2 plat 5 at (0): Can't find include file frag_ao.cginc\nCompiling Vertex program
+  error: 2 plat 5 at (41): '' : Include callback failed\nCompiling Vertex program
+  api=5 type=0 insize=2216 outsize=0 kw= ok=0
+Cmd: compileSnippet
+  api=5 type=1 insize=2216 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  error: 2 plat 5 at (0): Can't find include file frag_ao.cginc\nCompiling Vertex program
+  error: 2 plat 5 at (41): '' : Include callback failed\nCompiling Vertex program
+  api=5 type=0 insize=2722 outsize=0 kw= ok=0
+Cmd: compileSnippet
+  api=5 type=1 insize=2722 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  error: 2 plat 5 at (0): Can't find include file frag_ao.cginc\nCompiling Vertex program
+  error: 2 plat 5 at (41): '' : Include callback failed\nCompiling Vertex program
+  api=5 type=0 insize=2998 outsize=0 kw= ok=0
+Cmd: compileSnippet
+  api=5 type=1 insize=2998 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  error: 2 plat 5 at (0): Can't find include file frag_ao.cginc\nCompiling Vertex program
+  error: 2 plat 5 at (41): '' : Include callback failed\nCompiling Vertex program
+  api=5 type=0 insize=1938 outsize=0 kw= ok=0
+Cmd: compileSnippet
+  api=5 type=1 insize=1938 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=1333 outsize=1383 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=1333 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=634 outsize=725 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=634 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=5399 outsize=556 kw= ok=1
+Cmd: compileSnippet
+  api=9 type=1 insize=5399 outsize=7 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=5406 outsize=1360 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=5406 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=5410 outsize=2364 kw= ok=1
+Cmd: compileSnippet
+  api=9 type=1 insize=5410 outsize=7 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=5411 outsize=2364 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=5411 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=5415 outsize=2446 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=5415 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=5416 outsize=2360 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=5416 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=2189 outsize=1081 kw= ok=1
+Cmd: compileSnippet
+  api=9 type=1 insize=2189 outsize=7 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=2189 outsize=1113 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=2189 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=2193 outsize=1081 kw= ok=1
+Cmd: compileSnippet
+  api=9 type=1 insize=2193 outsize=7 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=2192 outsize=1596 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=2192 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=2195 outsize=1094 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=2195 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=10185 outsize=813 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=10185 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=10184 outsize=1263 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=10184 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=10184 outsize=1197 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=10184 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=10166 outsize=1033 kw= ok=1
+Cmd: compileSnippet
+  api=9 type=1 insize=10166 outsize=7 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=10185 outsize=880 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=10185 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=10166 outsize=1124 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=10166 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=10211 outsize=2090 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=10211 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=10165 outsize=372 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=10165 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=10169 outsize=534 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=10169 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=10191 outsize=3839 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=10191 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=10185 outsize=3987 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=10185 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=10191 outsize=3839 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=10191 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=4897 outsize=2195 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=4897 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=4899 outsize=1866 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=4899 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=4903 outsize=1908 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=4903 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=4912 outsize=840 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=4912 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=4893 outsize=2195 kw= ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=4893 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  error: 2 plat 5 at (0): Can't find include file frag_ao.cginc\nCompiling Vertex program
+  error: 2 plat 5 at (41): '' : Include callback failed\nCompiling Vertex program
+  api=5 type=0 insize=1952 outsize=0 kw= ok=0
+Cmd: compileSnippet
+  error: 2 plat 5 at (0): Can't find include file frag_ao.cginc\nCompiling Vertex program
+  error: 2 plat 5 at (41): '' : Include callback failed\nCompiling Vertex program
+  api=5 type=0 insize=2216 outsize=0 kw= ok=0
+Cmd: compileSnippet
+  error: 2 plat 5 at (0): Can't find include file frag_ao.cginc\nCompiling Vertex program
+  error: 2 plat 5 at (41): '' : Include callback failed\nCompiling Vertex program
+  api=5 type=0 insize=2722 outsize=0 kw= ok=0
+Cmd: compileSnippet
+  error: 2 plat 5 at (0): Can't find include file frag_ao.cginc\nCompiling Vertex program
+  error: 2 plat 5 at (41): '' : Include callback failed\nCompiling Vertex program
+  api=5 type=0 insize=2998 outsize=0 kw= ok=0
+Cmd: compileSnippet
+  error: 2 plat 5 at (0): Can't find include file frag_ao.cginc\nCompiling Vertex program
+  error: 2 plat 5 at (41): '' : Include callback failed\nCompiling Vertex program
+  api=5 type=0 insize=1938 outsize=0 kw= ok=0
