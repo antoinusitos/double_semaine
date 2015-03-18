@@ -84,6 +84,7 @@ public class Pot : MonoBehaviour {
                 deco = DecorPlante.transform.GetChild(number);
             }
             deco.gameObject.SetActive(true);
+            deco.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
         }
         else if (type == 2)
         {
