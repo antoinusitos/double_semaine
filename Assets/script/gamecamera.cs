@@ -271,6 +271,16 @@ public class gamecamera : MonoBehaviour {
                                         player.GetComponent<Animator>().SetTrigger("walk");
                                     move = true;
                                 }
+                                //aller a la poubelle
+                                else if (hit.transform.tag == "poubelle")
+                                {
+                                    player.GetComponent<NavMeshAgent>().SetDestination(hit.transform.GetChild(0).transform.position);
+                                    if (equipe)
+                                        player.GetComponent<Animator>().SetTrigger("walkwith");
+                                    else
+                                        player.GetComponent<Animator>().SetTrigger("walk");
+                                    move = true;
+                                }
                                 else
                                 {
                                     bDragging = true;
@@ -301,15 +311,17 @@ public class gamecamera : MonoBehaviour {
             from.transform.GetChild(0).GetComponent<showUICuisine>().Hide();
             from.GetComponent<cuisine>().Resetvalue();
             from.GetComponent<cuisine>().Enablebutton();
-            theObject.parent = player.transform;
+            theObject.GetComponent<objet>().holder = player.transform.GetChild(0).gameObject;
             theObject.rotation = Quaternion.Euler(new Vector3(0,260,0));
             theObject.position = new Vector3(0, .6f, .2f);
             //theObject.transform.position = new Vector3(player.transform.position.x + 1, 1, player.transform.position.z);
             equipe = true;
+            player.GetComponent<Animator>().SetBool("equipe", true);
             objetid = theObject.GetComponent<objet>().GetId();
             objet = theObject.gameObject;
             preparing = false;
             from.transform.GetChild(1).GetComponent<Animator>().SetBool("click", false);
+
             player.GetComponent<Animator>().SetTrigger("end_anim");
         }
         else

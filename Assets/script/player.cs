@@ -63,6 +63,7 @@ public class player : MonoBehaviour {
         Camera.main.GetComponent<gamecamera>().Bloquer();
         StopCoroutine("coolDownAnim");
         GetComponent<Animator>().SetTrigger("give");
+        GetComponent<Animator>().SetBool("equipe", false);
         StartCoroutine(coolDownAnim(give.length));
         
     }
