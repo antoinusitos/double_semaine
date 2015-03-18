@@ -421,3 +421,91 @@ Cmd: compileSnippet
   api=8 type=0 insize=1089 outsize=1845 kw= ok=1
 Cmd: compileSnippet
   api=4 type=1 insize=1079 outsize=1510 kw= ok=1
+Cmd: compileSnippet
+  api=9 type=0 insize=982 outsize=7958 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=9 type=1 insize=982 outsize=7 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=9 type=0 insize=938 outsize=6958 kw=POINT_COOKIE SHADOWS_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=9 type=1 insize=938 outsize=7 kw=POINT SHADOWS_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=9 type=1 insize=938 outsize=7 kw=SPOT SHADOWS_DEPTH SHADOWS_SOFT SHADOWS_NATIVE _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=9 type=0 insize=751 outsize=2602 kw=SHADOWS_DEPTH _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=9 type=0 insize=886 outsize=7943 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=9 type=0 insize=816 outsize=6873 kw=SPOT SHADOWS_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=816 outsize=7721 kw=POINT SHADOWS_CUBE _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=816 outsize=6 kw=SPOT SHADOWS_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=5 type=1 insize=816 outsize=6 kw=DIRECTIONAL_COOKIE SHADOWS_SCREEN _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=9 type=1 insize=816 outsize=7 kw=DIRECTIONAL_COOKIE SHADOWS_SCREEN SHADOWS_NATIVE _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=5 type=0 insize=600 outsize=1290 kw=SHADOWS_CUBE _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=9 type=0 insize=2998 outsize=8661 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=982 outsize=9848 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=938 outsize=6116 kw=POINT_COOKIE SHADOWS_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=938 outsize=943 kw=POINT SHADOWS_CUBE _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=938 outsize=943 kw=POINT_COOKIE SHADOWS_CUBE _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=938 outsize=5125 kw=SPOT SHADOWS_DEPTH SHADOWS_SOFT SHADOWS_NATIVE _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=938 outsize=7898 kw=POINT_COOKIE SHADOWS_CUBE SHADOWS_SOFT _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=938 outsize=6 kw=POINT_COOKIE SHADOWS_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=938 outsize=5718 kw=DIRECTIONAL_COOKIE SHADOWS_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=938 outsize=6035 kw=DIRECTIONAL_COOKIE SHADOWS_SCREEN _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=938 outsize=7628 kw=POINT_COOKIE SHADOWS_CUBE SHADOWS_SOFT _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=751 outsize=963 kw=SHADOWS_CUBE _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=751 outsize=331 kw=SHADOWS_CUBE _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=1152 outsize=3963 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=1152 outsize=2392 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=886 outsize=5581 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=8 type=1 insize=886 outsize=6565 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=8 type=0 insize=816 outsize=6070 kw=DIRECTIONAL SHADOWS_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=816 outsize=4920 kw=POINT_COOKIE SHADOWS_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=816 outsize=5223 kw=DIRECTIONAL_COOKIE SHADOWS_SCREEN _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=8 type=0 insize=816 outsize=7451 kw=POINT SHADOWS_CUBE _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=8 type=0 insize=816 outsize=7126 kw=DIRECTIONAL SHADOWS_SCREEN SHADOWS_NATIVE _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=816 outsize=2907 kw=POINT SHADOWS_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=8 type=1 insize=816 outsize=4688 kw=POINT_COOKIE SHADOWS_OFF _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=816 outsize=3590 kw=POINT SHADOWS_CUBE _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=8 type=1 insize=816 outsize=5005 kw=DIRECTIONAL_COOKIE SHADOWS_SCREEN SHADOWS_NATIVE _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=600 outsize=216 kw=SHADOWS_CUBE _ALPHABLEND_ON ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=600 outsize=6 kw=SHADOWS_CUBE _ALPHABLEND_ON ok=1
+Unhandled exception: Readfile from pipe failed. GLE=Le canal de communication a été fermé.
+
+
+Quitting shader compiler process
+
+Crashed!

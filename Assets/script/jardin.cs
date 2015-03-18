@@ -89,7 +89,7 @@ public class jardin : MonoBehaviour {
         return PotVide;
     }
 
-    void CheckGraines()
+    public void CheckGraines()
     {
         GrainesMedoc = player.GrainesMedoc;
         GrainesDeco = player.GrainesDeco;
@@ -98,13 +98,25 @@ public class jardin : MonoBehaviour {
         {
             transform.GetChild(0).GetComponent<ShowUIJardin>().disable(0);
         }
+        else
+        {
+            transform.GetChild(0).GetComponent<ShowUIJardin>().enable(0);
+        }
         if (GrainesDeco == 0)
         {
             transform.GetChild(0).GetComponent<ShowUIJardin>().disable(1);
         }
+        else
+        {
+            transform.GetChild(0).GetComponent<ShowUIJardin>().enable(1);
+        }
         if (GrainesMusic == 0)
         {
             transform.GetChild(0).GetComponent<ShowUIJardin>().disable(2);
+        }
+        else
+        {
+            transform.GetChild(0).GetComponent<ShowUIJardin>().enable(2);
         }
     }
 

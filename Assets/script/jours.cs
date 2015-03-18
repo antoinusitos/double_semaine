@@ -7,6 +7,7 @@ public class jours : MonoBehaviour {
     private int jour;
 
     public GameObject texte;
+    public GameObject garden;
 
     private int longeurJour;
     private int tempsActuel;
@@ -36,7 +37,7 @@ public class jours : MonoBehaviour {
             player.GrainesDeco++;
             player.GrainesMedoc++;
             player.GrainesMusic++;
-
+            garden.GetComponent<jardin>().CheckGraines();
         }
 	}
 }
